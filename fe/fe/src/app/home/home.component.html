@@ -1,0 +1,16 @@
+
+                                                    <div class="list-filter">
+                                                      
+                                                      <div class="list-products">
+                                                        <div class="list-product" *ngFor="let item of itemsAfterFilter()">
+                                                          <app-product
+                                                            [id]="item.id"
+                                                            [name]="item.name"
+                                                            [price]="item.price"
+                                                            [currency]="item.currency">
+                                                          </app-product>
+                                                        </div>
+                                                      </div>
+                                                        
+            
+        

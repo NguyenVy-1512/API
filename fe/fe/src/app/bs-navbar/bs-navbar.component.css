@@ -1,0 +1,42 @@
+
+
+.dropdown-toggle{
+    cursor: pointer;
+}
+
+.navbar {
+	border: 0;
+	border-radius: 0;
+    background: #447bb4;
+}
+
+
+input {
+    border-radius: 0 ;
+    width:400px;
+    border: none;
+}
+
+i {
+    color: white;
+}
+
+.btn {
+    border-radius: 0 ;
+    background: #ffc22a ;
+}
+
+
+
+.navbar button[type=submit]:hover i {
+    transform: rotate(90deg);
+}
+
+.navbar button[type=submit] i {
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-expand-lg .navbar-dark .navbar-nav  li a {
+    color: white;
+}
+

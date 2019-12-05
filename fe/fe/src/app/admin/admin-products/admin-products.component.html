@@ -1,0 +1,38 @@
+<p >
+    <a routerLink="/admin/products/new" class="btn btn-primary">New Product</a>
+
+</p>
+<input 
+    type="text" class="form-control" placeholder="Search">
+<table class="table">
+<thead>
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Product</td>
+        <td>P.Price</td>
+        <td>
+            <a [routerLink]="['/admin/products']" > Edit</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Product2</td>
+        <td>P2.Price</td>
+        <td>
+            <a [routerLink]="['/admin/products']" > Edit</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Product3</td>
+        <td>P3.Price</td>
+        <td>
+            <a [routerLink]="['/admin/products']" > Edit</a>
+        </td>
+    </tr>
+</tbody>
+</table>

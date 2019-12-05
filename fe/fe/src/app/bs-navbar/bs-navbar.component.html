@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <img src="https://svgur.com/i/GA7.svg" alt="logo">
+    </a>
+
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <input class="form-control ml-lg-5" type="search" placeholder="  Search" aria-label="Search">
+    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/shopping-cart">
+            <i class="fa fa-shopping-cart fa-2x" aira-hidden="true"></i>
+            <span class="badge badge-warning badge-pill">
+
+            </span>
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/sign-up">Register</a>
+          </li>
+
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" routerLink="/my/orders">My Orders</a>
+            <a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a>
+            <a class="dropdown-item" routerLink="/admin/products">Manage Products</a>
+            <a class="dropdown-item" (click)="logout()">Log Out</a>
+          </div>
+        </li>
+
+      </ul>
+    
+       
+
+    </div>
+
+  </div>
+
+</nav>

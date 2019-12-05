@@ -1,0 +1,23 @@
+.container-x {
+    padding: 20px;
+    background: #fff;
+    
+}
+
+section {
+    padding : 20px;
+}
+
+.list-items {
+    display: flex;
+  
+    justify-content: center;
+  
+    flex-flow: row wrap;
+    align-content: flex-end;
+  }
+  
+  .list-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
