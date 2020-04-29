@@ -26,14 +26,15 @@
                     <div class="row msg_container base_sent">
                       
                         <div class="col-md-10 col-xs-10">
+                            
                             <ng-container *ngFor="let message of messages | async">
-
                                 <div class="messages" [ngClass]="{ 'from': message.sentBy === 'bot',
-                                                                  'to':   message.sentBy === 'user' }">
-                                  {{ message.content }}
+                                                                  'to':   message.sentBy === 'user' }" *ngFor="let mes of message.content">
+                                  {{ mes }}
                                 </div>
-                              
+                                
                               </ng-container>
+                              
                         </div>
                         
                     </div>

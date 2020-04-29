@@ -10,9 +10,9 @@ import { map, tap, retry, catchError } from 'rxjs/operators';
 
 export class ApiService {
   //Define API
-  apiURL = 'http://137.135.125.91:3000'
+  //apiURL = 'http://137.135.125.91:3000'
   httpOption;
-  //apiURL = 'http://localhost:3000'
+  apiURL = 'http://localhost:3000'
   constructor(
     private http: HttpClient
 
