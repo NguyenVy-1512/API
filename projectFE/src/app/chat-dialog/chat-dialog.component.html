@@ -29,8 +29,30 @@
                             
                             <ng-container *ngFor="let message of messages | async">
                                 <div class="messages" [ngClass]="{ 'from': message.sentBy === 'bot',
-                                                                  'to':   message.sentBy === 'user' }" *ngFor="let mes of message.content">
-                                  {{ mes }}
+                                                                  'to':   message.sentBy === 'user' }" [ngSwitch] = "message.num" >
+                                    <ng-container *ngSwitchCase="0">
+                                    <div *ngFor="let mes of message.content"> {{ mes }}
+                                   </div>
+                                  </ng-container>
+                                    <ng-container *ngSwitchCase="1">
+                                    <div *ngFor="let mes of message.content"> {{ mes }}
+                                  </div>
+                                  </ng-container>
+                                  <div  *ngSwitchCase="2" class="row">
+                                      <div *ngFor="let rep of message.content" class="btn-backgound">
+                                        <button (click) ="send(rep)" 
+                                            class="btn btn-black-border" id="btn-chat">{{rep}}
+                                        </button>
+                                    </div>
+                                </div>      
+                                  <div  *ngSwitchCase="3" class="row">
+                                    <div class="btn-backgound">
+                                        <button  (click)= "sendurl(message.content)"
+                                            class="btn btn-black-border" id="btn-chat">Bạn muốn mua con này, hãy xem thêm thông tin nhé
+                                        </button>
+                                        
+                                  </div>
+                                </div>               
                                 </div>
                                 
                               </ng-container>

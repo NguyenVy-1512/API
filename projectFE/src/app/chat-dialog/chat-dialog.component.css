@@ -39,6 +39,19 @@ body{
     color: white;
     border-radius: 0;
 }
+.btn-black-border{
+    background: #ffffff;
+    color: black;
+    border-radius: 100;
+    padding: 10px;
+    padding-top: 10;
+    font-size: 13px;
+    font-style: oblique/inherit/initial;
+}
+.btn-backgound{
+    border-radius: 100;
+    padding: 10px;
+}
 
 .top-bar {
   background: #111111;
@@ -117,7 +130,6 @@ img {
 
 .input-group {
     padding: 10px;
-    background-color: #ffffff;
 }
 
 .messages {
@@ -147,4 +159,8 @@ img {
 .message.to + .message.to,
 .message.from + .message.from {
 margin-top: -10px;
+}
+
+.panel-footer{
+    background: rgb(173, 173, 173);
 }
