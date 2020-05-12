@@ -42,14 +42,14 @@ body{
 .btn-black-border{
     background: #ffffff;
     color: black;
-    border-radius: 100;
+    border-radius: 30px;
     padding: 10px;
     padding-top: 10;
     font-size: 13px;
     font-style: oblique/inherit/initial;
 }
 .btn-backgound{
-    border-radius: 100;
+    border-radius: 30px;
     padding: 10px;
 }
 

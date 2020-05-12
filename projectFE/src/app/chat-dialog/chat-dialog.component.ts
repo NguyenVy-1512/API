@@ -33,6 +33,6 @@ export class ChatDialogComponent implements OnInit {
   }
   sendurl(rep)
   {
-    this.router.navigateByUrl(rep);
+    this.router.navigate(['/']);
   }
 }
